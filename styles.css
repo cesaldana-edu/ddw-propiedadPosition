@@ -1,0 +1,60 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    position: fixed; /* Cambia a relative si prefieres */
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    z-index: 1000; /* Asegura que el menú esté por encima de otros elementos */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Cambia a block para un menú vertical */
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #575757;
+}
+
+/* Desplazamiento para ajustar la posición de algunos elementos */
+nav ul li:nth-child(2) {
+    margin-left: 20px;
+}
+
+main { text-align: center; margin: 2em; }
+section { margin: 0 auto; padding: 1em; }
+h1 { font-size: 3em; }
+p { width: 80%; margin: 1em auto;}
+.wrapper { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px; }
+.box { background-color: rgb(207 232 220); color: #333; font-weight: 600; border-radius: 6px; }
+.box img { width: 80%; height: 60%;  object-fit: contain; }
+
+/* FOOTER */
+footer { border-top: 1px solid #ddd; padding-top: 1em; text-align: center;}
+footer .redes-sociales i { color: #333 !important; }
+footer .redes-sociales i:not(:first-child) { padding-left: 1em; }
+footer .copyright { margin: 1em auto; }
